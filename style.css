@@ -28,17 +28,24 @@ html {
 
 .header-top {
     display: grid;
-    grid-template: 1fr 2fr / 2.5fr 1fr;
+    grid-template: 1fr / 1fr 2fr 1fr 1fr;
 }
 
-.search-icon {
-    grid-row: 1;
+.header-top-imgs {
+    width: 30px;
+    height: 30px;
+}
+
+#search-icon {
     grid-column: 1;
 }
 
 .search-bar {
-    grid-row: 1;
-    grid-column: 1;
+    grid-column: 2;
+}
+
+#notification-icon {
+    grid-column: 3;
 }
 
 /* MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS */
