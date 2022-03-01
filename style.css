@@ -4,5 +4,20 @@ html {
 
 .admin-container {
     display: grid;
-    background-color: rgb(230, 230, 230);
+    grid-template: 1fr 4fr / 1fr 1.5fr 1.5fr 1fr;
+}
+
+.sidebar {
+    display: grid;
+    background-color: rgb(0, 128, 255);
+}
+
+.center-console {
+    display: grid;
+    background-color: #fafaf9;
+}
+
+.main-menu {
+    display: grid;
+    background-color: white;
 }
