@@ -28,24 +28,52 @@ html {
 
 .header-top {
     display: grid;
-    grid-template: 1fr / 1fr 2fr 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr 3fr 1fr 1fr;
+    padding: 10px;
 }
 
 .header-top-imgs {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 #search-icon {
     grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    padding-right: 15px;
 }
 
 .search-bar {
-    grid-column: 2;
+    grid-column: 2 / 4;
+    height: 20px;
+    justify-self: stretch;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 0.5px black;
 }
 
 #notification-icon {
-    grid-column: 3;
+    grid-column: 4;
+    justify-self: end;
+    align-self: center;
+    padding-left: 50px;
+}
+
+.profile-img-header-top {
+    grid-column: 5;
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+}
+
+.profile-name-header-top {
+    grid-column: 6;
+    justify-self: start;
+    align-self: center;
+    padding-right: 50px;
 }
 
 /* MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS */
