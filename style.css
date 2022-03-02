@@ -5,17 +5,18 @@ html {
 
 .admin-container {
     display: grid;
-    grid-template: 165px 4fr / 1fr 1.5fr 1.5fr 1fr;
+    grid-template: 1fr 4fr / 0.5fr 1.5fr 1.5fr 1fr;
 }
 
 /* SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS */
 
 .sidebar {
     display: grid;
-    background-color: rgb(0, 128, 255);
+    background-color: rgb(111, 155, 201);
     grid-column: 1;
     grid-row: 1/ 4;
     color: white;
+    width: minmax(50px, 100px);
 }
 
 /* TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS */
@@ -143,15 +144,45 @@ html {
     grid-row: 2;
     grid-column: 2 / 5;
     display: grid;
-    grid-template: 1fr / 1fr 1fr 0.5fr;
+    grid-template: 10px 1fr/ 1fr 1fr 1fr;
 }
 
 .projects {
     grid-row: 1;
     grid-column: span 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 5px;
+    gap: 15px;
 }
+
+.projects-text {
+    justify-self: start;
+    align-self: start;
+    grid-row: 1;
+    grid-column: span 2;
+    height: 10px;
+}
+
+.boxes {
+    background-color: rgb(111, 155, 201);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+/* SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS */
 
 .socials-bar {
     grid-row: 1;
     grid-column: 3;
+}
+
+
+.annoucements {
+
+}
+
+.annoucements-boxes {
+
 }
