@@ -17,7 +17,7 @@ html {
     color: #fafaf9;
     grid-column: 1;
     grid-row: 1/ 4;
-    width: minmax(1fr, 180px);
+    width: minmax(1fr, 250px);
     justify-content: start;
     align-items: start;
 }
@@ -53,6 +53,7 @@ html {
     width: 120px;
     justify-items: end;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .dashboard, .home-page, .profile-page, .messages-page, .history-page, .tasks-page, .communities-page {
@@ -220,10 +221,17 @@ html {
 }
 
 .boxes {
+    display: grid;
     background-color: rgb(111, 155, 201);
     color: #fafaf9;
     border-radius: 10px;
     box-shadow: 2px 2px 2px black;
+    padding-left: 10px;
+}
+
+.box-icons {
+    justify-self: end;
+    padding-right: 10px;
 }
 
 /* SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS SOCIALS BAR ITEMS */
