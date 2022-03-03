@@ -5,27 +5,43 @@ html {
 
 .admin-container {
     display: grid;
-    grid-template: 1fr 4fr / 0.5fr 1.5fr 1.5fr 1fr;
+    grid-template: 0.5fr 4fr / 0.5fr 1.5fr 1.5fr 1fr;
 }
 
 /* SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS SIDEBAR ITEMS */
 
 .sidebar {
     display: grid;
-    grid-template: repeat(2, 1fr) / 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
     background-color: rgb(111, 155, 201);
     color: #fafaf9;
     grid-column: 1;
     grid-row: 1/ 4;
     width: minmax(1fr, 200px);
+    justify-content: start;
+    align-items: start;
 }
 
 .sidebar-top {
-
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
 }
 
 .sidebar-bottom {
+    grid-row: 2;
+}
 
+.svg-icon {
+    width: 25px;
+    height: 25px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.sidebar-text {
+    grid-row: 1;
+    grid-column: 1;
 }
 
 /* ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS */
