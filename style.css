@@ -176,13 +176,16 @@ html {
 
 .socials-bar {
     display: grid;
-    grid-template: 5px 0.5fr 0.5fr / 1fr;
+    grid-template: 5px 1fr 1fr / 1fr;
+    padding-left: 5px;
 }
 
 .announcements {
     display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
     grid-row: 2;
     grid-column: 1;
+    gap: 15px;
 }
 
 .announcements-text {
@@ -190,21 +193,30 @@ html {
     align-self: start;
     grid-row: 1;
     grid-column: 1;
-    height: 10px;
     color: grey;
+    height: 5px;
+}
+
+.announcements-paragraphs-text {
+    display: grid;
+    line-height: 15px;
+    align-items: center;
+    justify-items: center;
+    height: 5px;
+    padding-top: 5px;
+    margin: 6px;
 }
 
 .annoucements-boxes {
     color: grey;
-    background-color: rgb(111, 155, 201);
-    color: white;
+    background-color: #fafaf9;
+    color: grey;
     border-radius: 10px;
-    align-self: start;
-    justify-self: start;
-    gap: 40px;
-    padding: 4px;
-    width: 400px;
-    height: 85px;
+    width: 2fr;
+    height: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 1.5px 1.5px 1.5px black;
 }
 
 .trending {
