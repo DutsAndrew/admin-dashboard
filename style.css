@@ -20,6 +20,7 @@ html {
     width: minmax(1fr, 250px);
     justify-content: start;
     align-items: start;
+    padding: 15px;
 }
 
 .sidebar-top {
@@ -207,7 +208,7 @@ html {
     grid-column: span 2;
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
-    padding: 5px;
+    padding: 15px;
     gap: 15px;
 }
 
@@ -239,7 +240,7 @@ html {
 .socials-bar {
     display: grid;
     grid-template: 5px 1fr 1fr / 1fr;
-    padding-left: 5px;
+    padding: 15px;
 }
 
 .announcements {
@@ -285,6 +286,7 @@ html {
     display: grid;
     grid-row: 3;
     grid-column: 1;
+    grid-template-rows: repeat(6, 0.2fr);
 }
 
 .trending-text {
@@ -293,4 +295,16 @@ html {
 
 .trending-profiles {
     color: grey;
+    display: grid;
+    grid-template: 1fr / 0.3fr 1fr;
+    align-items: center;
+    justify-items: start;
+    justify-content: start;
+    background-color: #fafaf9;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
 }
