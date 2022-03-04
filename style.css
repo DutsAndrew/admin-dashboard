@@ -13,11 +13,11 @@ html {
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 1fr / 1fr; 
-    background-color: rgb(111, 155, 201);
+    background-color: #38bdf8;
     color: #fafaf9;
     grid-column: 1;
     grid-row: 1/ 4;
-    width: minmax(1fr, 250px);
+    width: minmax(300px, 1fr);
     justify-content: start;
     align-items: start;
     padding: 15px;
@@ -71,8 +71,12 @@ html {
 
 /* ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS ICON IMGS */
 
-.svg-icon, .star-it, .watch-it, .share-it {
+.svg-icon {
     filter: invert(91%) sepia(0%) saturate(4216%) hue-rotate(130deg) brightness(107%) contrast(105%);
+}
+
+.star-it, .watch-it, .share-it {
+    filter: invert(95%) sepia(1%) saturate(5295%) hue-rotate(181deg) brightness(92%) contrast(92%);
 }
 
 /* TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS TOP BANNER ITEMS */
@@ -108,7 +112,8 @@ html {
     justify-self: stretch;
     align-self: center;
     border-radius: 10px;
-    box-shadow: 0.5px 0.5px 0.5px black;
+    box-shadow: 0.5px 0.5px 0.5px #292524;
+    background-color: #e2e8f0;
 }
 
 #notification-icon {
@@ -132,7 +137,7 @@ html {
     justify-self: start;
     align-self: center;
     padding-right: 50px;
-    color: grey;
+    color: #292524;
 }
 
 /* BOTTOM BANNER ITEMS BOTTOM BANNER ITEMS BOTTOM BANNER ITEMS BOTTOM BANNER ITEMS BOTTOM BANNER ITEMS BOTTOM BANNER ITEMS */
@@ -160,7 +165,7 @@ html {
 }
 
 .welcome-text {
-    color: grey;
+    color: #292524;
 }
 
 #new-post {
@@ -185,18 +190,19 @@ html {
 }
 
 .header-btn {
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
     border-radius: 10px;
-    background-color: white;
-    color: grey;
-    border: 1px solid #808080;
+    background-color: #38bdf8;
+    color: #292524;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
 }
 
 /* MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS MAIN DISPLAY ITEMS */
 
 .main-menu {
-    background-color: white;
+    background-color: #e2e8f0;
     grid-row: 2;
     grid-column: 2 / 5;
     display: grid;
@@ -218,16 +224,18 @@ html {
     grid-row: 1;
     grid-column: span 2;
     height: 10px;
-    color: grey;
+    color: #292524;
 }
 
 .boxes {
     display: grid;
-    background-color: rgb(111, 155, 201);
-    color: #fafaf9;
+    background-color: #fbbf24;
+    color: #292524;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #292524;
     padding-left: 10px;
+    background-image: linear-gradient(-10deg, #fafaf9, #fafaf9, #fafaf9, #fafaf9, #38bdf8);
+    background-clip: border-box, padding-box, content-box;
 }
 
 .box-icons {
@@ -241,6 +249,8 @@ html {
     display: grid;
     grid-template: 5px 1fr 1fr / 1fr;
     padding: 15px;
+    width: minmax(200px, 1fr);
+    background-color: #e2e8f0;
 }
 
 .announcements {
@@ -256,7 +266,7 @@ html {
     align-self: start;
     grid-row: 1;
     grid-column: 1;
-    color: grey;
+    color: #292524;
     height: 5px;
 }
 
@@ -271,15 +281,15 @@ html {
 }
 
 .annoucements-boxes {
-    color: grey;
+    color: #292524;
     background-color: #fafaf9;
-    color: grey;
+    color: #292524;
     border-radius: 10px;
     width: 2fr;
     height: 50px;
     font-size: 12px;
     font-weight: 700;
-    box-shadow: 1.5px 1.5px 1.5px black;
+    box-shadow: 1.5px 1.5px 1.5px #292524;
 }
 
 .trending {
@@ -290,17 +300,19 @@ html {
 }
 
 .trending-text {
-    color: grey;
+    color: #292524;
 }
 
 .trending-profiles {
-    color: grey;
+    color: #292524;
     display: grid;
     grid-template: 1fr / 0.3fr 1fr;
     align-items: center;
     justify-items: start;
     justify-content: start;
     background-color: #fafaf9;
+    width: minmax(150px, auto);
+    padding-left: 15px;
 }
 
 .profile-img {
